@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 export const Aside = () => {
   return (
     <aside>
-      <h4>Aside Menu</h4>
+      <h4>Menu</h4>
 
       <nav>
-        <a href="">Slide Viewer</a>
-        <a href="">Chat Window</a>
+        <Link to="/slides">Slide Viewer</Link>
+        <Link to="/chat">Chat Window</Link>
       </nav>
     </aside>
   );

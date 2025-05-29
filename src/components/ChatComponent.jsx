@@ -37,13 +37,15 @@ export const ChatComponent = () => {
   };
 
   return (
-    <section id="chat" className="chat-container">
-      <h2>Chat Component</h2>
+    <section className="chat-container">
+      <h2>Chat Window</h2>
       <form action="" className="chat-form" onSubmit={(e) => { e.preventDefault(); sendMessage(); }}>
-        <label htmlFor="chat-input">
-          Type your message:
-        </label>
-        <input id="chat-input" name="chat-input" value={input} onChange={(e) => setInput(e.target.value)} />
+        <section className="chat-input-section">
+          <label htmlFor="chat-input">
+            Type your message:
+          </label>
+          <input id="chat-input" name="chat-input" value={input} onChange={(e) => setInput(e.target.value)} />
+        </section>
 
         <button>Send</button>
         {/* <button type="button">Send</button> */}
